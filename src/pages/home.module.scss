@@ -1,1 +1,75 @@
-// TODO
+.Container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 7rem);
+}
+
+.Content{
+ width: 700px;
+ margin: 0 auto;
+
+ & + .Content{
+   margin-top: 2rem;
+ }
+
+ a{
+  strong{
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--heading);
+  }
+
+  p{
+    font-size: 1.125rem;
+    line-height: 1.9rem;
+    text-align: justify;
+    color: var(--info);
+    margin-bottom: 0.8rem;
+  }
+
+  div{
+    display: flex;
+    align-items: center;
+
+    svg{
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.4rem;
+    }
+
+    time,p{
+      font-size: 0.875rem;
+      line-height: 1.06rem;
+      color: var(--info);
+      display: flex;
+      align-items: center;
+      margin-left: 0.3rem;
+    }
+
+    p{
+      margin-bottom: 0.3rem;
+    }
+  }
+
+ }
+
+}
+
+.Button{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  button{
+   background: transparent;
+   text-decoration: none;
+   border:0;
+   color: var(--highlight);
+   font-weight: 600;
+   font-size: 1.125rem;
+   line-height: 1.3rem;
+  }
+
+}
