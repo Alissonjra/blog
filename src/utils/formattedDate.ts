@@ -6,8 +6,15 @@ export function formatDate(date: string): string {
     locale: pt,
   });
 }
+
+export function formatNewDate(date: string): string {
+  return format(new Date(date), 'dd MMM yyyy', {
+    locale: pt,
+  });
+}
+
 export function formatLastPublication(date: string): string {
-  return format(parseISO(date), "'* editado em' dd MMM yyyy', às' hh:mm", {
+  return format(new Date(date), "'* editado em' dd MMM yyyy', às' hh:mm", {
     locale: pt,
   });
 }
